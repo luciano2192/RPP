@@ -1,0 +1,105 @@
+# depslib dependency file v1.0
+1570494069 source:d:\greco_luciano_1f\parcial_parte_uno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1570493837 d:\greco_luciano_1f\parcial_parte_uno\utn.h
+
+1570493701 d:\greco_luciano_1f\parcial_parte_uno\clientes_juegos.h
+
+1570493812 source:d:\greco_luciano_1f\parcial_parte_uno\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"clientes_juegos.h"
+
+1570493974 source:d:\greco_luciano_1f\parcial_parte_uno\clientes_juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1574017816 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\parcial_parte_uno\clientes_juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956605 c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\parcial_parte_uno\utn.h
+
+1573611109 c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\parcial_parte_uno\clientes_juegos.h
+
+1573601782 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\parcial_parte_uno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956592 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\parcial_parte_uno\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"clientes_juegos.h"
+
+1574017816 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\primer_parcial\clientes_juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956605 c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\primer_parcial\utn.h
+
+1573611109 c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\primer_parcial\clientes_juegos.h
+
+1573601782 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\primer_parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956592 source:c:\users\lucho\desktop\laboratorio_uno\greco_luciano_1f\primer_parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"clientes_juegos.h"
+
+1574021599 source:c:\users\lucho\desktop\rpp\clientes_juegos.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956605 c:\users\lucho\desktop\rpp\utn.h
+
+1573611109 c:\users\lucho\desktop\rpp\clientes_juegos.h
+
+1573601782 source:c:\users\lucho\desktop\rpp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"clientes_juegos.h"
+
+1571956592 source:c:\users\lucho\desktop\rpp\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"clientes_juegos.h"
+
