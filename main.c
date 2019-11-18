@@ -13,14 +13,7 @@ eJuego juegos[CANTJUEGOS] = {
     { 76 , "Arcade Street Fighter" , 99.5 },
     { 15 , "Arcade Puzzle Bubble" , 32.9 },
 };
-/*
-eCliente clientes[TOTAL] = {
-{1,"greco","luciano",'m',"fda 3","34134",0},
-{2,"alba","tony",'f',"hgfhf 7","135634",0},
-{3,"leco","lucas",'m',"adffda 1","341",0},
-{4,"diba","tomas",'f',"hfhhhf 543","634",0},
-};
-*/
+
 int main()
 {
     int opcionMenu , auxId , resPrint;

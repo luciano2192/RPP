@@ -281,22 +281,103 @@ int printAlquileres( eAlquiler *list , int len );
 */
 void listarPedidos( eJuego *juegos , eAlquiler *alquileres , eCliente *clientes , int lenClientes , int lenJuegos , int lenAlquileres );
 
+/**
+*\brief Promedio y total de los juegos alquilados.
+*\param input donde se almacena el promedio.
+*\param juego lista de juegos.
+*\param alquiler lista de alquileres.
+*\param lenJue largo de la lista juegos.
+*\param lenAlq largo de la lista alquileres.
+*
+*/
 void promedioJuegosAlquilados(  float *input , eJuego* juego , int lenJue , eAlquiler* alquiler , int lenAlq );
 
+/**
+*\brief La cantidad de juegos cuyo importe NO superan el promedio.
+*\param prom el promedio a comparar.
+*\param list lista de juegos.
+*\param len largo de la lista juegos.
+*\return 0 caso de error - int con cantidad si se puede.
+*
+*/
 int noSuperanPromedio( float prom , eJuego* list , int len );
 
+/**
+*\brief Listar clientes que alquilaron un juego determinado.
+*\param juego lista de juegos.
+*\param alquiler lista de alquileres.
+*\param cliente lista de clientes.
+*\param lenCli largo de la lista clientes.
+*\param lenJuegos largo de la lista juegos.
+*\param lenAlq largo de la lista alquileres.
+*
+*/
 void clientesQueAlquilaronXjuego( eJuego* juego , eAlquiler* alquiler , eCliente* cliente , int lenCli , int lenAlq , int lenJuegos );
 
+/**
+*\brief Listar todos los juegos que fueron alquilados por un cliente determinado.
+*\param juego lista de juegos.
+*\param alquiler lista de alquileres.
+*\param cliente lista de clientes.
+*\param lenCli largo de la lista clientes.
+*\param lenJuegos largo de la lista juegos.
+*\param lenAlq largo de la lista alquileres.
+*
+*/
 void juegosQueAlquilaronXcliente( eJuego* juego , eAlquiler* alquiler , eCliente* cliente , int lenCli , int lenAlq , int lenJuegos);
 
+/**
+*\brief Listar el/los juego/s menos alquilado/s.
+*\param juego lista de juegos.
+*\param alquiler lista de alquileres.
+*\param lenJuegos largo de la lista juegos.
+*\param lenAlq largo de la lista alquileres.
+*
+*/
 void juegosMenosAlquilados( eJuego* juego , eAlquiler* alquiler , int lenAlq , int lenJuegos );
 
+/**
+*\brief Listar el/los clientes que realizo mas alquileres.
+*\param clientes lista de clientes.
+*\param alquiler lista de alquileres.
+*\param lenCliente largo de la lista clientes.
+*\param lenAlquiler largo de la lista alquileres.
+*
+*/
 void clientesConMasAlquileres( eCliente* clientes , eAlquiler* alquiler , int lenAlquiler , int lenCliente );
 
+/**
+*\brief Listar todos los juegos alquilados en una fecha determinada.
+*\param juego lista de juegos.
+*\param alquiler lista de alquileres.
+*\param lenJuegos largo de la lista juegos.
+*\param lenAlquileres largo de la lista alquileres.
+*
+*/
 void juegosXfecha( eJuego* juego , eAlquiler* alquiler , int lenAlquileres , int lenJuegos );
 
+/**
+*\brief Listar todos los clientes que realizaron al menos un alquiler en una fecha determinada.
+*\param cliente lista de clientes.
+*\param alquiler lista de alquileres.
+*\param lenClientes largo de la lista clientes.
+*\param lenAlquileres largo de la lista alquileres.
+*
+*/
 void clientesQueAlquilaronXfecha( eCliente* cliente , eAlquiler* alquiler , int lenAlquileres , int lenClientes );
 
+/**
+*\brief Listar todos los juegos ordenados por importe(descendente), utilizando el metodo de burbujeo mas eficiente.
+*\param juegos lista de juegos.
+*\param lenJuegos largo de la lista juegos.
+*
+*/
 void juegosOrdenadosPorImporte( eJuego* juegos , int lenJuegos );
 
+/**
+*\brief Listar todos los clientes ordenados por apellido (ascendente), utilizando el metodo de insercion.
+*\param clientes lista de clientes.
+*\param lenClientes largo de la lista clientes.
+*
+*/
 void clientesOrdenadosPorApellido( eCliente* clientes , int lenClientes );
