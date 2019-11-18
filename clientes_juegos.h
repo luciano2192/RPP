@@ -27,14 +27,43 @@ typedef struct {
     int isEmpty;
 } eAlquiler;
 
-
+/**
+*\brief Muestra el menu principal del abm.
+*\return El valor ingresado por el usuario.
+*
+*/
 int menuABM();
 
+/**
+*\brief Muestra el menu para modificar los datos del abm.
+*\return El valor ingresado por el usuario.
+*
+*/
 int menuModificacion();
 
+/**
+*\brief Muestra el menu para listar los datos ingresados.
+*\return El valor ingresado por el usuario.
+*
+*/
 int menuListar();
 
+/**
+*\brief aumenta automaticamente el indice.
+*\param list lista.
+*\param int largo de la lista.
+*\return El indice.
+*
+*/
 int cliente_aumentar( eCliente *list , int );
+
+/**
+*\brief aumenta automaticamente el indice.
+*\param list lista.
+*\param int largo de la lista.
+*\return El indice.
+*
+*/
 int alquiler_aumentar( eAlquiler *list , int );
 
 char verificaSioNo( char* msj , char* msjError );
