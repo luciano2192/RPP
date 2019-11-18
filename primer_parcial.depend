@@ -77,7 +77,7 @@
 	<string.h>
 	"clientes_juegos.h"
 
-1574021599 source:c:\users\lucho\desktop\rpp\clientes_juegos.c
+1574099013 source:c:\users\lucho\desktop\rpp\clientes_juegos.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -85,11 +85,11 @@
 	"utn.h"
 	"clientes_juegos.h"
 
-1571956605 c:\users\lucho\desktop\rpp\utn.h
+1574094456 c:\users\lucho\desktop\rpp\utn.h
 
-1573611109 c:\users\lucho\desktop\rpp\clientes_juegos.h
+1574099051 c:\users\lucho\desktop\rpp\clientes_juegos.h
 
-1573601782 source:c:\users\lucho\desktop\rpp\main.c
+1574099105 source:c:\users\lucho\desktop\rpp\main.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>

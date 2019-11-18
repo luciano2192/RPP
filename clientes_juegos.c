@@ -57,12 +57,23 @@ int menuListar() {
     return menu;
 };
 
-int inicializar( eCliente *list , eAlquiler *alquileres , int len ) {
+int alquileres_inicializar( eAlquiler *alquileres , int len ) {
+    int respuesta = -1;
+
+    for( int i = 0 ; i < len ; i++ ) {
+        alquileres[i].isEmpty = 1;
+        respuesta = 0;
+    }
+
+    return respuesta;
+}
+
+int cliente_inicializar( eCliente *list , int len ) {
     int respuesta = -1;
 
     for( int i = 0 ; i < len ; i++ ) {
         list[i].isEmpty = 1;
-        alquileres[i].isEmpty = 1;
+        respuesta = 0;
     }
 
     return respuesta;
@@ -342,7 +353,7 @@ void printCliente( eCliente *list , int cod ) {
 };
 
 int printClientes( eCliente *list , int len ) {
-    int i , vacio , resp = 0;
+    int i , vacio , resp;
     vacio = cliente_estaVacio( list , len );
     if ( vacio == 1 ) {
         printf("\nLISTADO DE CLIENTES\n");
@@ -352,6 +363,7 @@ int printClientes( eCliente *list , int len ) {
                 printCliente( list , i );
             }
         };
+        resp = 0;
     } else {
         resp = 1;
         printf("\nNO HAY DATOS CARGADOS.");
@@ -377,7 +389,7 @@ int ordenarJuegos( eJuego* list , int len ) {
 }
 
 int printJuegos( eJuego *list , int len ) {
-  int i , vacio , resp = 0;
+  int i , vacio , resp ;
     vacio = juego_estaVacio( list , len );
     if ( vacio == 1 ) {
         printf( "\nLISTADO DE JUEGOS\n" );
@@ -387,6 +399,7 @@ int printJuegos( eJuego *list , int len ) {
                 printf( "%d\t%s\t%.2f\n" , list[i].codigo , list[i].descripcion , list[i].importe );
             }
         };
+        resp = 0
     } else {
         resp = 1;
         printf("\nNO HAY DATOS CARGADOS.");
@@ -395,7 +408,7 @@ int printJuegos( eJuego *list , int len ) {
 };
 
 int printAlquileres( eAlquiler *list , int len ) {
-    int i , vacio , resp = 0;
+    int i , vacio , resp;
     vacio = alquiler_estaVacio( list , len );
     if ( vacio == 1 ) {
         printf( "\nLISTADO DE ALQUILERES\n" );
@@ -405,6 +418,7 @@ int printAlquileres( eAlquiler *list , int len ) {
                 printf( "%d\t%d\t%d\t%d-%d-%d\n" , list[i].codAlquiler , list[i].codJuego.codigo , list[i].codCliente.codigo , list[i].fecha.dia , list[i].fecha.mes, list[i].fecha.anio );
             }
         };
+        resp = 0
     } else {
         resp = 1;
         printf("\nNO HAY DATOS CARGADOS.");

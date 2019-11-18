@@ -66,47 +66,219 @@ int cliente_aumentar( eCliente *list , int );
 */
 int alquiler_aumentar( eAlquiler *list , int );
 
+/**
+*\brief verifica S o N.
+*\param msj mensaje a mostrar.
+*\param msjError mensaje a mostrar en caso de error.
+*\return El valor ingresado.
+*
+*/
 char verificaSioNo( char* msj , char* msjError );
 
+/**
+*\brief verifica si hay lugar disponible.
+*\param list lista a recorrer.
+*\param length largo de la lista.
+*\return -1 si no hay lugar - int con posicion del lugar disponible.
+*
+*/
 int cliente_hayLugar( eCliente* list , int length );
+
+/**
+*\brief verifica si hay lugar disponible.
+*\param list lista a recorrer.
+*\param length largo de la lista.
+*\return -1 si no hay lugar - int con posicion del lugar disponible.
+*
+*/
 int alquiler_hayLugar( eAlquiler* list , int length );
 
+/**
+*\brief formatea una cadena de texto, primer letra en mayuscula el resto en minuscula.
+*\param text cadena a formatear.
+*
+*/
 void formatear( char text[] );
 
+/**
+*\brief agrega un cliente a la lista.
+*\param list lista donde se agregan.
+*\param len largo de la lista.
+*\param apellido cadena de texto.
+*\param nombre cadena de texto.
+*\param sexo caracter.
+*\param domicilio cadena de texto.
+*\param telefono cadena de texto.
+*
+*/
 void altaCliente( eCliente list[] , int len , char apellido[] , char
 nombre[] , char sexo , char domicilio[] , char telefono[] );
 
+/**
+*\brief verifica si la lista esta vacia.
+*\param list lista a recorrer.
+*\param length largo de la lista.
+*\return 0 si no esta vacia - 1 si esta vacia.
+*
+*/
 int cliente_estaVacio( eCliente* list , int length );
+
+/**
+*\brief verifica si la lista esta vacia.
+*\param list lista a recorrer.
+*\param length largo de la lista.
+*\return 0 si no esta vacia - 1 si esta vacia.
+*
+*/
 int juego_estaVacio( eJuego* list , int length );
+
+/**
+*\brief verifica si la lista esta vacia.
+*\param list lista a recorrer.
+*\param length largo de la lista.
+*\return 0 si no esta vacia - 1 si esta vacia.
+*
+*/
 int alquiler_estaVacio( eAlquiler* list , int length );
 
-int inicializar( eCliente *list , eAlquiler *alquileres , int len );
+/**
+*\brief inicializa la lista.
+*\param alquileres lista a recorrer.
+*\param len largo de la lista.
+*\return -1 si no inicializo - 0 si fue exitoso.
+*
+*/
+int alquileres_inicializar( eAlquiler *alquileres , int len );
 
+/**
+*\brief inicializa la lista.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\return -1 si no inicializo - 0 si fue exitoso.
+*
+*/
+int cliente_inicializar( eCliente *list , int len );
+
+/**
+*\brief elimina un dato de la lista.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\param codigo codigo a buscar.
+*
+*/
 void borrarCliente( eCliente* list , int len , int codigo );
 
+/**
+*\brief ordena la lista.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*
+*/
 void ordenarClientes( eCliente *list , int len );
 
+/**
+*\brief imprime los datos de un cliente.
+*\param list lista a recorrer.
+*\param cod codigo a buscar.
+*
+*/
 void printCliente( eCliente *list , int cod );
 
+/**
+*\brief imprime los datos de todos los cliente.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\return 0 si se puede imprimir - 1 si no se puede.
+*
+*/
 int printClientes( eCliente* list , int len );
 
+/**
+*\brief modifica los datos de un cliente.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\param cod del cliente a modificar.
+*\return 0 si se modifico - -1 si no se modifico.
+*
+*/
 int modificarCliente( eCliente* list , int len , int codigo );
 
-int cliente_buscarCod( eCliente* list , int len , int codigo );
-int juego_buscarCod( eJuego *list , int len , int codigo );
+/**
+*\brief busca un cliente.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\param cod del cliente a buscar.
+*\return 0 si no se encuentra - codigo del cliente.
+*
+*/
+int buscarCod( eCliente *list , int len , int codigo );
 
+/**
+*\brief ordena la lista.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\return 0 al finalizar.
+*
+*/
 int ordenarJuegos( eJuego* list , int len );
 
+/**
+*\brief imprime los datos de todos los juegos.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\return 0 si se puede imprimir - 1 si no se puede.
+*
+*/
 int printJuegos( eJuego* list , int len );
 
+/**
+*\brief Recibe dos cadenas de texto y muestra las cadenas de texto segun corresponda.
+*\param msj el mensaje a mostrar.
+*\param errorMsj el mensaje a mostrar en caso de error.
+*\return El valor ingresado por el usuario.
+*
+*/
 char pedirSexo( char msj[] , char errorMsj[] );
 
+/**
+*\brief copia la estructura origen a destino.
+*\param origen estructura a ser copiada.
+*\param destino estructura copia.
+*\param len largo de la lista.
+*
+*/
 void clonarCliente( eCliente origen[] , eCliente destino[] , int len );
 
+/**
+*\brief agrega un alquiler a la lista.
+*\param alquileres lista donde se agregan.
+*\param juegos lista de juegos.
+*\param clientes lista de clientes.
+*\param len largo lista.
+*\param lenJuegos largo lista juegos.
+*
+*/
 void altaAlquilerJuego( eAlquiler *alquileres, eJuego *juegos , eCliente *clientes , int len , int lenJuegos );
 
+/**
+*\brief imprime los datos de todos los alquileres.
+*\param list lista a recorrer.
+*\param len largo de la lista.
+*\return 0 si se puede imprimir - 1 si no se puede.
+*
+*/
 int printAlquileres( eAlquiler *list , int len );
 
+/**
+*\brief muestra las distintas consultas disponibles .
+*\param juegos lista de juegos.
+*\param alquileres lista de alquileres.
+*\param clientes lista de clientes.
+*\param lenClientes largo de la lista clientes.
+*\param lenJuegos largo de la lista juegos.
+*\param lenAlquileres largo de la lista alquileres.
+*
+*/
 void listarPedidos( eJuego *juegos , eAlquiler *alquileres , eCliente *clientes , int lenClientes , int lenJuegos , int lenAlquileres );
 
 void promedioJuegosAlquilados(  float *input , eJuego* juego , int lenJue , eAlquiler* alquiler , int lenAlq );

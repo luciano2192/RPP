@@ -30,7 +30,8 @@ int main()
     eCliente auxClientes[TOTAL];
     eAlquiler alquileres[TOTAL];
 
-    inicializar( clientes , alquileres , TOTAL );
+    alquileres_inicializar( alquileres , TOTAL );
+    cliente_inicializar( clientes , TOTAL );
 
     do {
 
